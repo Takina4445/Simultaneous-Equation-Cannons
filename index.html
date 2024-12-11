@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>卡牌組合計算器</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="block">
+    <h2>超量階級</h2>
+    <div id="x-values">
+        <!-- Checkboxes for X_values -->
+    </div>
+</div>
+
+<div class="block">
+    <h2>融合等級</h2>
+    <div id="y-values">
+        <!-- Checkboxes for Y_values -->
+    </div>
+</div>
+
+<div class="block">
+    <h2>B 值 (對手場上特定數值)</h2>
+    <div id="b-values">
+        <input type="number" class="b-input" placeholder="輸入 B 值">
+        <input type="number" class="b-input" placeholder="輸入 B 值">
+        <input type="number" class="b-input" placeholder="輸入 B 值">
+        <input type="number" class="b-input" placeholder="輸入 B 值">
+        <input type="number" class="b-input" placeholder="輸入 B 值">
+        <input type="number" class="b-input" placeholder="輸入 B 值">
+        <button id="clear-b">清空</button>
+    </div>
+</div>
+
+<div class="block">
+    <h2>A值(雙方 手牌、場上合計數值)</h2>
+    <div>
+        <label for="a-now">A 現在值: </label>
+        <input type="number" id="a-now">
+    </div>
+    <div>
+        <label for="a-max">A 最大值: </label>
+        <input type="number" id="a-max" value="20">
+    </div>
+    <div>
+        <label for="highlight-diff">欲加強顯示的差值: </label>
+        <input type="number" id="highlight-diff" value="2">
+    </div>
+</div>
+
+<div class="block">
+    <button id="calculate">計算</button>
+</div>
+
+<div class="result">
+    <h2>計算結果</h2>
+    <table id="results">
+        <thead>
+            <tr>
+                <th>A: 雙方 手牌、場上卡牌數量</th>
+                <th>B: 對方場上怪獸等級</th>
+                <th>X: 超量怪獸階級</th>
+                <th>Y: 融合怪獸等級</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

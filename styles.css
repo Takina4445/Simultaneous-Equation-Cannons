@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.block {
+    margin-bottom: 30px;
+}
+
+.block h2 {
+    margin-bottom: 10px;
+}
+
+input, button {
+    font-size: 20px;
+    margin: 5px 0;
+    padding: 8px;
+}
+
+button {
+    padding: 12px 24px;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+table .highlight {
+    color: red;
+    font-weight: bold;
+}
