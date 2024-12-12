@@ -1,84 +1,38 @@
+/* General styles */
 body {
     font-family: Arial, sans-serif;
-    margin: 20px;
     font-size: 20px;
-    line-height: 1.6;
-    background-color: #f2f2f2; /* 背景設定為淡灰色 */
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
 }
 
 .block {
-    margin-bottom: 30px;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
 }
 
-.block h2 {
-    margin-bottom: 10px;
+/* Specific backgrounds for sections */
+#x-values {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 10px;
 }
 
-input, button {
-    font-size: 20px;
-    margin: 5px 0;
-    padding: 8px;
+#y-values {
+    background-color: rgba(128, 0, 128, 0.1);
+    padding: 10px;
+    border-radius: 10px;
 }
 
-button {
-    padding: 12px 24px;
-    cursor: pointer;
-    border: none;
-    border-radius: 25px; /* 圓角按鈕 */
-    background-color: #007BFF;
-    color: white;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
-#x-values, #y-values {
-    display: flex;
-    flex-wrap: wrap; /* 支援響應式布局 */
-    gap: 10px; /* 增加間距 */
-}
-
-#x-values label, #y-values label {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    font-size: 22px; /* 調整文字大小 */
-}
-
-#x-values input, #y-values input {
-    transform: scale(1.5); /* 增加核選方塊大小 */
-}
-
+/* Responsive design */
 @media (max-width: 768px) {
     body {
-        font-size: 16px; /* 手機端文字縮小 */
+        font-size: 16px;
     }
 
-    button {
-        font-size: 18px;
-        padding: 10px 20px;
+    .block {
+        margin: 5px;
     }
-
-    #x-values, #y-values {
-        flex-direction: column; /* 手機端排列方式改為垂直 */
-    }
-}
-
-.result table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-}
-
-.result th, .result td {
-    border: 1px solid #ccc;
-    padding: 10px;
-    text-align: center;
-}
-
-.result .highlight {
-    color: red;
-    font-weight: bold;
 }
